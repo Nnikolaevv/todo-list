@@ -276,7 +276,7 @@ const tasks = [
     function setTheme(name) {
        //Создаем объект на основе принятого значения имени
        const selectedThemeObj = themes[name];
-       //перебираем объект и на каждой итерации меняем название свойства на значение
+       //Перебираем объект и на каждой итерации меняем название свойства на значение
        Object.entries(selectedThemeObj).forEach(([key, value]) => {
            document.documentElement.style.setProperty(key, value)
        })
